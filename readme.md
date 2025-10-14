@@ -1,10 +1,14 @@
-# 深入理解旋转位置编码 (Rotary Position Embedding - RoPE)
+# 深入理解旋转位置编码 (RoPE)
+---
+## 项目链接：https://github.com/Tasselszcx/RoPE
+---
 
+## RoPE概述
 旋转位置编码（Rotary Position Embedding, RoPE）是一种用于在Transformer模型中注入位置信息的先进技术。与传统的加性位置编码不同，RoPE通过一种创新的**旋转**操作，优雅地实现了相对位置编码，并已成为当今主流大语言模型（如 Llama, Qwen）的核心组件之一。
 
 ---
-
-## 核心思想：RoPE的巧妙之处
+![arch](RoPE.jpg)
+## RoPE的核心思想
 
 RoPE设计的革命性在于它将位置信息以“乘性”的方式融入到词向量中，其核心优势体现在以下几点：
 
